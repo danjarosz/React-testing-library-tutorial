@@ -20,11 +20,11 @@ describe("getBy methods", () => {
         expect(headingElement).toBeInTheDocument();
     });
 
-    it('should render same text passed into title prop (using getByTitile)', () => {
-        render(<Header title="My Header"/>);
-        const headingElement = screen.getByTitle("Header");
-        expect(headingElement).toBeInTheDocument();
-    });
+    // it('should render same text passed into title prop (using getByTitile)', () => {
+    //     render(<Header title="My Header"/>);
+    //     const headingElement = screen.getByTitle("Header");
+    //     expect(headingElement).toBeInTheDocument();
+    // });
 
     it('should render same text passed into title prop (using getByTestId)', () => {
         render(<Header title="My Header"/>);
@@ -32,11 +32,11 @@ describe("getBy methods", () => {
         expect(headingElement).toBeInTheDocument();
     });
 
-    it('should render same text passed into title prop (using getAllByRole)', () => {
-        render(<Header title="My Header"/>);
-        const headingElements = screen.getAllByRole("heading");
-        expect(headingElements.length).toBe(2);
-    });
+    // it('should render same text passed into title prop (using getAllByRole)', () => {
+    //     render(<Header title="My Header"/>);
+    //     const headingElements = screen.getAllByRole("heading");
+    //     expect(headingElements.length).toBe(2);
+    // });
 });
 
 describe("findBy methods", () => {
